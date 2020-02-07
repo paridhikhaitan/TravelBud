@@ -1,4 +1,4 @@
-body {
+.signUpPage {
   background: url("../images/bg.jpg");
   background-size: cover;
   background-position: center;
@@ -14,11 +14,18 @@ body {
   border: none;
 }
 
+.signUp a{
+  color: white;
+}
+
+.signUp:hover{
+  opacity: 0.5;
+}
 .grid-container{
   display: grid;
   grid-gap: 5rem 10rem;
   grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto;
-  margin: 18rem 10rem;
+  margin: 10rem 10rem;
 }
 
 #splash-grid-item{
@@ -34,4 +41,32 @@ body {
 #splash-grid-item button{
   margin-top: 30vh;
   margin-bottom: 2rem;
+}
+
+.map h1{
+  grid-column-start:1;
+  grid-column-end: 12;
+}
+
+#googleMap{
+  width: 600px;
+  height: 400px;
+  background-color: gray;
+  grid-column-start: 4;
+  grid-column-end: 12;
+}
+
+span{
+  display: flex;
+  margin-bottom: 4rem;
+}
+
+select{
+  margin-left: 100px;
+  border: 2px solid #ff757c;
+  background-color: white;
+}
+
+option{
+  background-color: white;
 }

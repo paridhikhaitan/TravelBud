@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Travel
+    </title>
+    <link rel="stylesheet" href="./scss/reset.css" />
+    <link rel="stylesheet" href="./scss/app.css" />
+    <link rel="stylesheet" href="./scss/typography.css" />
+  </head>
+  <body>
+    <div class="grid-container map">
+      <h1>
+        Here are some great choices for you!
+      </h1>
+      <div></div>
+      <div>
+        <span>
+          <h3>Budget</h3>
+          <select>
+            <option>$500-$1000</option>
+            <option>$1000-$2000</option>
+            <option>$2000-$5000</option>
+            <option>>$5000</option>
+          </select>
+        </span>
+        <span>
+          <h3>Airport</h3>
+          <select>
+            <option>Locate Me</option>
+            <option>SAN</option>
+            <option>SFO</option>
+            <option>LA</option>
+          </select>
+        </span>
+        <span>
+          <h3>Date</h3>
+          <select>
+            <option>Today</option>
+            <option>Tomorrow</option>
+            <option>Never</option>
+          </select>
+        </span>
+
+        <button class="signUp">SEARCH</button>
+      </div>
+      <div id="googleMap"></div>
+    </div>
+
+    <script>
+      // Initialize and add the map
+      function initMap() {
+        // The location of Uluru
+        var uluru = { lat: -25.344, lng: 131.036 };
+        // The map, centered at Uluru
+        var map = new google.maps.Map(document.getElementById("googleMap"), {
+          zoom: 4,
+          center: uluru
+        });
+        // The marker, positioned at Uluru
+        var marker = new google.maps.Marker({ position: uluru, map: map });
+      }
+    </script>
+
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBrBS-RUWqxeKRtIYrnyZOF9vHX_SWf7L4&callback=initMap"
+    ></script>
+  </body>
+</html>
