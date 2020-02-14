@@ -1,0 +1,114 @@
+//@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap");
+@import "./Reset.scss";
+@import "./Var.scss";
+
+@font-face {
+  font-family: "Avenir Next Regular";
+  src: url("../fonts/AvenirNextLTPro-Regular.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/AvenirNextLTPro-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/AvenirNextLTPro-Regular.otf") format("opentype"),
+    /* Open Type Font */ url("../fonts/AvenirNextLTPro-Regular.svg")
+      format("svg"),
+    /* Legacy iOS */ url("../fonts/AvenirNextLTPro-Regular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */ url("../fonts/AvenirNextLTPro-Regular.woff")
+      format("woff"),
+    /* Modern Browsers */ url("../fonts/AvenirNextLTPro-Regular.woff2")
+      format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Avenir Next Bold";
+  src: url("../fonts/AvenirNextLTPro-Bold.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/AvenirNextLTPro-Bold.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/AvenirNextLTPro-Bold.otf") format("opentype"),
+    /* Open Type Font */ url("../fonts/AvenirNextLTPro-Bold.svg") format("svg"),
+    /* Legacy iOS */ url("../fonts/AvenirNextLTPro-Bold.ttf") format("truetype"),
+    /* Safari, Android, iOS */ url("../fonts/AvenirNextLTPro-Bold.woff")
+      format("woff"),
+    /* Modern Browsers */ url("../fonts/AvenirNextLTPro-Bold.woff2")
+      format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  font-size: 10px;
+}
+
+h1 {
+  font-family: "Avenir Next Regular", sans-serif;
+  font-size: 5rem;
+  font-weight: 700;
+  color: $bannertextblue;
+}
+
+h2 {
+  font-family: "Avenir Next Bold", sans-serif;
+  font-size: 3rem;
+  font-weight: 500;
+  color: $bannertextblue;
+  font-weight: 600;
+}
+
+h3 {
+  font-family: "Avenir Next Regular", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: $bannertextblue;
+  line-height: 1.5;
+}
+
+h4 {
+  font-family: "Avenir Next Regular", sans-serif;
+  font-size: 1.8rem;
+  color: $white;
+}
+
+h5 {
+  font-family: "Avenir Next Bold", sans-serif;
+  font-size: 1.6rem;
+  color: $bannerblue;
+}
+
+h6 {
+  font-family: "Avenir Next Bold", sans-serif;
+  font-size: 1.6rem;
+  color: $mainblue;
+}
+
+button {
+  .upload {
+    font-family: "Avenir Next Regular";
+    font-size: 1.8rem;
+    color: $mainblue;
+    font-weight: 700;
+  }
+}
+
+p {
+  font-family: "Avenir Next Regular";
+  font-size: 1.6rem;
+  color: $mainblue;
+}
+
+a {
+  color: $mainblue;
+  font-family: "Avenir Next Regular";
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+a:hover{
+  font-weight: 800;
+}
+
+select {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+}

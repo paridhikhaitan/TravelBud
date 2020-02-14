@@ -1,0 +1,62 @@
+@import "./Typography.scss";
+@import "./Var.scss";
+
+.navbar{
+    background: $mainblue;
+    width: 100%;
+    height: 7rem;
+
+    button{
+        width: 100px;
+        height: 30px;
+        border: none;
+        border-radius: 3px;
+        background: $yellow;
+    }
+
+    > *{
+        padding-top: 2rem;
+    }
+}
+
+.booktile{
+    margin-bottom: 5rem;
+
+    img{
+        width: 100%;
+    }
+
+    h5{
+        margin-top: -4rem;
+        text-align: center;
+    }
+}
+
+.banner{
+    background: $bannerblue;
+    width: 100%;
+    height: 25rem;
+    border-radius: 20px;
+
+    img{
+        width: 100%;
+        margin-top: 4rem;
+    }
+
+    h2{
+        margin-top: 6rem;
+    }
+
+}
+
+.allBooks{
+    .ant-input-wrapper .ant-input-group{
+        width: 100%;
+    }
+}
+
+.wish{
+    p{
+        margin-top: 2rem;
+    }
+}
